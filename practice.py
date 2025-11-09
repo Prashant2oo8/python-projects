@@ -1,0 +1,6 @@
+test = set()
+a = int(input("enter integer value:"))
+test.add(a)
+b = str(input("enter float value:"))
+test.add(b)
+print(test)
