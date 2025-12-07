@@ -34,17 +34,46 @@
 #             print("notfound")
 
 
-def check_line():
-    data = True
+# def check_line():
+#     data = True
+#     lineNo = 1
+#     with open("newfile.txt", "r") as f:
+#         while data:
+#             data = f.readline()
+#             if not data:
+#                 break
+#             if ("learning" in data):
+#                 print(lineNo)
+#             lineNo += 1
+
+# with open ("something.txt", "r") as f:
+#     valuse = f.read()
+
+# new_valuse = valuse.replace("java", "python")
+# with open ("something.txt", "w") as f:
+#         f.write(new_valuse) 
+
+# with open ("something.txt", "r") as f:
+#     val = f.read()
+#     if "simple" in val:
+#         print("exist")
+#     else:
+#         print("not exist")
+
+def check_lines():
     lineNo = 1
-    with open("newfile.txt", "r") as f:
-        while data:
+    data = f.readline()
+    with open ("something.txt", "r") as f:
+        while "language" in data:
+            print (lineNo)
+            break
+        else:
             data = f.readline()
-            if not data:
-                break
-            if ("learning" in data):
-                print(lineNo)
             lineNo += 1
+        
 
 
-     
+
+
+
+    
