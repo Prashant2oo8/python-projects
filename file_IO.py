@@ -62,18 +62,11 @@
 
 def check_lines():
     lineNo = 1
-    data = f.readline()
-    with open ("something.txt", "r") as f:
-        while "language" in data:
-            print (lineNo)
-            break
-        else:
+    with open("something.txt", "r") as f:
+        data = f.readline()
+        while data:
+            if "language" in data:
+                print (f"word found in line number {lineNo}")
+                break
             data = f.readline()
             lineNo += 1
-        
-
-
-
-
-
-    
